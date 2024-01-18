@@ -23,6 +23,10 @@
                     id="animated-asset"
                     src="assets/asset.glb"
                 ></a-asset-item>
+                <a-asset-item
+                    id="clp"
+                    src="assets/CLP.glb"
+                ></a-asset-item>
             </a-assets>
 
             <a-marker
@@ -40,6 +44,25 @@
                     scale="0.022022656089725118 0.022022656089725118 0.022022656089725118"
                     animation-mixer="loop: repeat"
                     gltf-model="#animated-asset"
+                    class="clickable"
+                    gesture-handler
+                ></a-entity>
+            </a-marker>
+            <a-marker
+                id="clppattern"
+                type="pattern"
+                preset="custom"
+                url="assets/CLP.patt"
+                raycaster="objects: .clickable"
+                emitevents="true"
+                cursor="fuse: false; rayOrigin: mouse;"
+                id="markerA"
+            >
+                <a-entity
+                    id="clpmarker"
+                    scale="0.122022656089725118 0.122022656089725118 0.122022656089725118"
+                    animation-mixer="loop: repeat"
+                    gltf-model="#clp"
                     class="clickable"
                     gesture-handler
                 ></a-entity>
