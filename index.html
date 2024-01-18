@@ -27,6 +27,10 @@
                     id="vp1"
                     src="assets/VP1.glb"
                 ></a-asset-item>
+               <a-asset-item
+                    id="vp4"
+                    src="assets/VP4.glb"
+                ></a-asset-item>
             </a-assets>
 
 
@@ -64,6 +68,25 @@
                     scale="0.003022656089725118 0.003022656089725118 0.003022656089725118"
                     animation-mixer="loop: repeat"
                     gltf-model="#vp1"
+                    class="clickable"
+                    gesture-handler
+                ></a-entity>
+            </a-marker>
+            <a-marker
+                id="vp4pattern"
+                type="pattern"
+                preset="custom"
+                url="assets/VP4.patt"
+                raycaster="objects: .clickable"
+                emitevents="true"
+                cursor="fuse: false; rayOrigin: mouse;"
+                id="markerA"
+            >
+                <a-entity
+                    id="vp4marker"
+                    scale="0.003022656089725118 0.003022656089725118 0.003022656089725118"
+                    animation-mixer="loop: repeat"
+                    gltf-model="#vp4"
                     class="clickable"
                     gesture-handler
                 ></a-entity>
