@@ -20,34 +20,12 @@
         >
             <a-assets>
                 <a-asset-item
-                    id="animated-asset"
-                    src="assets/asset.glb"
-                ></a-asset-item>
-                <a-asset-item
                     id="clp"
                     src="assets/CLP.glb"
                 ></a-asset-item>
             </a-assets>
 
-            <a-marker
-                id="animated-marker"
-                type="pattern"
-                preset="custom"
-                url="assets/marker.patt"
-                raycaster="objects: .clickable"
-                emitevents="true"
-                cursor="fuse: false; rayOrigin: mouse;"
-                id="markerA"
-            >
-                <a-entity
-                    id="bowser-model"
-                    scale="0.022022656089725118 0.022022656089725118 0.022022656089725118"
-                    animation-mixer="loop: repeat"
-                    gltf-model="#animated-asset"
-                    class="clickable"
-                    gesture-handler
-                ></a-entity>
-            </a-marker>
+
             <a-marker
                 id="clppattern"
                 type="pattern"
@@ -60,7 +38,7 @@
             >
                 <a-entity
                     id="clpmarker"
-                    scale="0.012022656089725118 0.012022656089725118 0.012022656089725118"
+                    scale="0.003022656089725118 0.003022656089725118 0.003022656089725118"
                     animation-mixer="loop: repeat"
                     gltf-model="#clp"
                     class="clickable"
