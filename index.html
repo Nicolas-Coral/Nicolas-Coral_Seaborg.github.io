@@ -23,6 +23,10 @@
                     id="clp"
                     src="assets/CLP.glb"
                 ></a-asset-item>
+                <a-asset-item
+                    id="vp1"
+                    src="assets/VP1.glb"
+                ></a-asset-item>
             </a-assets>
 
 
@@ -45,7 +49,25 @@
                     gesture-handler
                 ></a-entity>
             </a-marker>
-
+            <a-marker
+                id="vp1pattern"
+                type="pattern"
+                preset="custom"
+                url="assets/vp1.patt"
+                raycaster="objects: .clickable"
+                emitevents="true"
+                cursor="fuse: false; rayOrigin: mouse;"
+                id="markerA"
+            >
+                <a-entity
+                    id="vp1marker"
+                    scale="0.003022656089725118 0.003022656089725118 0.003022656089725118"
+                    animation-mixer="loop: repeat"
+                    gltf-model="#vp1"
+                    class="clickable"
+                    gesture-handler
+                ></a-entity>
+            </a-marker>
             <a-entity camera></a-entity>
         </a-scene>
     </body>
