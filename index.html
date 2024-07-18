@@ -31,7 +31,10 @@
                     id="vp4"
                     src="assets/VP4.glb"
                 ></a-asset-item>
-            </a-assets>
+                           <a-asset-item
+                    id="tCore_VP1_FASEB"
+                    src="assets/tCore_VP1_FASEB.glb"
+                ></a-asset-item></a-assets>
 
 
             <a-marker
@@ -87,6 +90,24 @@
                     scale="0.003022656089725118 0.003022656089725118 0.003022656089725118"
                     animation-mixer="loop: repeat"
                     gltf-model="#vp4"
+                    class="clickable"
+                    gesture-handler
+                ></a-entity>
+                <a-marker
+                id="tCore_VP1_FASEBpattern"
+                type="pattern"
+                preset="custom"
+                url="assets/tCore_VP1_FASEB.patt"
+                raycaster="objects: .clickable"
+                emitevents="true"
+                cursor="fuse: false; rayOrigin: mouse;"
+                id="markerA"
+            >
+                <a-entity
+                    id="tCore_VP1_FASEBmarker"
+                    scale="0.003022656089725118 0.003022656089725118 0.003022656089725118"
+                    animation-mixer="loop: repeat"
+                    gltf-model="#tCore_VP1_FASEB"
                     class="clickable"
                     gesture-handler
                 ></a-entity>
